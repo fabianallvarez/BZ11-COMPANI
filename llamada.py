@@ -19,7 +19,7 @@ if codigo == 200:
 
     for moneda in respuesta_json:
         if moneda["asset_id"].startswith("EUR"):
-        print(moneda["asset_id"], moneda["name"])
+            print(moneda["asset_id"], moneda["name"])
 
 else:
     print("La peticio de la api ha fallado")    
