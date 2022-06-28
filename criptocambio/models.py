@@ -8,7 +8,7 @@ class CriptoModel:
 
     def __init__(self, origen, destino):
         self.moneda_origen = origen
-        self.mmoneda_destino = destino
+        self.moneda_destino = destino
         self.cambio = 0.0 
 
     def consultar_cambio(self):
