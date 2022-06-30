@@ -1,5 +1,7 @@
+from tkinter import Tk
+
 from .models import CriptoModel
-from .views import CriptoView
+from .views import CriptoView, CriptoViewTK
 
 
 class CriptoController:
@@ -22,3 +24,9 @@ class CriptoController:
             seguir = ""
             while seguir not in ("S", "N"):
                 seguir = self.vista.quieres_seguir()
+
+class CriptoControllerTK():
+    def __init__(self):
+        super().__init__()
+        self.vista = CriptoViewTK(self)
+        self.modelo = CriptoModel()
